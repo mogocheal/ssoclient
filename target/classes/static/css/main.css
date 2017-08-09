@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+/* basic style */
+html, body, h1, h2, h3, h4,ul,li,dl, input{ font-family:"Microsoft Yahei" !important; font-size:14px; margin:0px; padding:0px;}
+html,body { width:100%; height:auto;}
+body{ background-color:#e7efef;}
+ul,dl,dd,h1,h2,h3,h4,h5,h6,form{ padding:0; margin:0;}
+ul,li{ list-style:none; border:none;}
+img{ border:0px; vertical-align:middle;}
+a{ color:#333333; text-decoration:none;}
+.clear{ clear:both;}
+a:focus{ text-decoration:none; outline:none;}
+/*浮动*/
+.fl{ float:left !important;}
+.fr{ float:right !important;}
+.t-center{ text-align: center;}
+.bold{ font-weight:bold;}
+.clearfix { zoom: 1; clear:both;}
+input[type=file]:focus,input[type=checkbox]:focus,input[type=radio]:focus { outline:none;}
+input[type=checkbox]:focus,input[type=checkbox]:active{ background-color:#ffffff;}
+
+/*login style*/
+.bg-main{ position:fixed; top:0; left:0; height:100%; width: 100%; z-index:-10; background-position:center -10px; background-repeat:no-repeat; background-attachment:fixed; background-size:100% auto; background-color:#f3f3f3; zoom:1;background-image:url(../img/wapper-bg.png); clear:both;}
+.login-box{ width: 620px; margin: 0 auto;}
+.login-icon{ text-align: center;}
+.login-icon img{ width: 196px; height: 196px;}
+.login-logo{ width: 617px; height: 72px; margin: 0px auto; background:url(../img/login-logo.png) center no-repeat;}
+.login-main{ width: 400px; margin: 40px auto 0; border-radius: 5px; background-color: #fff;}
+.login-main-title{ height: 40px; line-height: 40px; border-bottom: 1px solid #d7d7d7; text-align: center;}
+.login-main-title a{ display: inline-block; height: 40px; line-height: 40px; padding: 0 30px;}
+.login-main-title a:hover,.login-main-title a.login-btn-selected{ text-decoration: none; color: #00a8ff; border-bottom: 2px solid #00a8ff;}
+.login-main-con{ padding: 25px 40px;}
+.login-main-con div{ margin-bottom: 15px;}
+.login-main-con input,.login-main-con select{ margin-bottom: 15px;}
+.login-main-con a{ width: 200px; margin: 0 auto 15px; margin-left: 60px;}
+.login-main-con button{ width: 200px; margin: 0 auto 15px; margin-left: 60px;}
+

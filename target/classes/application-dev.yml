@@ -1,0 +1,23 @@
+server:
+  port: 8090
+  context-path: /client
+  # 注意：显示声明了 server.context-path，访问主页为 http://localhost:9000/client
+  # 该链接会跳转到 auth server，一旦 auth server 从社交账户获得授权，将重定向到 client
+
+  # 在本示例中 server.context-path 必须被显示声明
+  # 因为 client app 和 auth server 都运行在 localhost
+  # 如果不显示声明的话，cookie 路径会冲突，两个应用无法通过会话标识
+
+security:
+  oauth2:
+    client:
+      client-id: ssoclient
+      client-secret: secret # 应该是一个随机生成的 GUID，跟数据库一致
+      access-token-uri: http://localhost:9000/oauth/token
+      user-authorization-uri: http://localhost:9000/oauth/authorize
+    resource:
+      user-info-uri: http://localhost:9000/me
+
+logging:
+  level:
+    org.springframework.security: DEBUG
