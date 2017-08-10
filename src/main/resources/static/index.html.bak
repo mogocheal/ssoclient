@@ -61,7 +61,7 @@
         var self = this;
         $http.get("/client/user").success(function(data) {
             if (data.name) {
-                self.user = data.loginname;
+                self.user = data.name;
                 self.authenticated = true;
             } else {
                 self.user = "N/A";
